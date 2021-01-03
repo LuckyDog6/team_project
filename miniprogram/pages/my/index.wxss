@@ -1,0 +1,95 @@
+.about{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 50rpx
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center
+}
+
+.left{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center */
+}
+.left .nickname{
+  margin-left: 50rpx
+}
+.left .detail{
+  font-size: 10px;
+  margin-left: 50rpx;
+  color: rgb(200, 200, 200)
+}
+.right{
+  width: 25%
+}
+.right image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 70rpx
+}
+.total{
+  margin-top: 50rpx
+}
+.tot{
+  display: flex;
+  flex-direction: row
+}
+.ed{
+  display: flex;
+  flex-direction: row
+}
+.total image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 50rpx;
+  
+}
+.total text{
+  color: rgb(200, 200, 200);
+  font-size: 12px;
+  margin-left: 20rpx;
+  margin-top: 5rpx
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx
+}
+.doing{
+  display: flex;
+  flex-direction: row;
+  margin-bottom:30rpx 
+}
+
+.doing image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 50rpx;
+  margin-top: 13rpx
+}
+.do{
+  display: flex;
+  flex-direction: row;
+}
+.do image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 50rpx;
+  margin-top: 13rpx
+}
+van-cell{
+  width: 700rpx
+}
+.im{
+  font-size: 16px;
+  font-weight: bold;
+  color: black !important;
+  margin-right: 30rpx
+}

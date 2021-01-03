@@ -1,0 +1,30 @@
+<text class="about">关于我</text>
+<view class="container">
+  <view class="left">
+    <text class="nickname">{{user.nickName}}</text>
+    <view class="detail" bindtap="look">查看资料</view>
+  </view>
+  <view class="right">
+    <image src="{{user.avatarUrl}}"></image>
+  </view>
+</view>
+<view class="total">
+  <view class="tot">
+    <image src="../../images/icons/t_test.png"></image>
+    <text><text class="im">{{total+done}}</text>任务总量</text>
+  </view>
+  <view class="ed">
+    <image src="../../images/icons/t_tested.png"></image>
+    <text>已完成<text class="im">{{done}}</text>任务量</text>
+  </view>
+</view>
+<view class="detail">
+  <view class="doing">
+    <image src="../../images/icons/test.png"></image>
+    <van-cell title="总未完成" is-link bindtap="doing" />
+  </view>
+  <view class="do">
+    <image src="../../images/icons/tested.png"></image>
+    <van-cell title="总已完成" is-link bindtap="done" />
+  </view>
+</view>

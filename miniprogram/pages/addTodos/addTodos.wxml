@@ -1,0 +1,49 @@
+<van-cell title="标题" is-link value="{{todo.title}}" bindtap="showTitle">
+
+</van-cell>
+<van-dialog use-slot title="标题" show="{{ show }}" show-cancel-button bind:close="onClose" bind:confirm="confirm">
+  <van-cell-group>
+    <van-field bind:input="title" border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+<van-cell title="地点" is-link value="{{todo.location.name}}" bindtap="chooseLocation" />
+
+<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="startTime">
+  <view class="picker">
+    <van-cell title="开始时间" is-link value="{{todo.startTime}}" />
+  </view>
+</picker>
+<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="endTime">
+  <view class="picker">
+    <van-cell title="结束时间" is-link value="{{todo.endTime}}" />
+  </view>
+</picker>
+<van-cell title="类别" is-link value="{{todo.category}}" bindtap="showCate" />
+<van-dialog use-slot title="类别" show="{{ categ }}" show-cancel-button bind:close="onClose" bind:confirm="confirm">
+  <van-cell-group>
+    <van-field bind:input="category" border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+
+<van-cell title="发布人" is-link value="{{todo.master}}" bindtap="showMaster" />
+<van-dialog use-slot title="发布人" show="{{ mast }}" show-cancel-button bind:close="onClose" bind:confirm="confirm">
+  <van-cell-group>
+    <van-field bind:input="master" border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+
+<van-cell center title="参与人员" value="" label="{{todo.group}}" bindtap="showGroup" />
+<van-dialog use-slot title="参与人员" show="{{ grou }}" show-cancel-button bind:close="onClose" bind:confirm="confirm">
+  <van-cell-group>
+    <van-field bind:input="group" border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+
+<van-cell center title="任务详情" value="" label="{{todo.detail}}" bindtap="showDetail" />
+<van-dialog use-slot title="任务详情" show="{{ deta }}" show-cancel-button bind:close="onClose" bind:confirm="confirm">
+  <van-cell-group>
+    <van-field bind:input="detail" type="textarea" autosize border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+<van-dialog id="van-dialog" />
+<van-button type="primary" size="large" bindtap="submit">提交</van-button>

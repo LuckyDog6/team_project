@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/calendarV2/index",
+    "pages/index/index",
+    "pages/calendar/index",
+    "pages/calendarTemplate/index",
+    "pages/calendarComponent/index",
+    "pages/calendarMoreComponent/index",
+    "pages/datepickerTemplate/index",
+    "pages/addTodos/addTodos",
+    "pages/my/index",
+    "pages/info/info",
+    "pages/infoed/infoed",
+    "pages/myInfo/index",
+    "pages/doing/index",
+    "pages/done/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序日历",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#DC143C",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/calendarV2/index",
+        "text": "",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/homeed.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "",
+        "iconPath": "images/icons/my.png",
+        "selectedIconPath": "images/icons/myed.png"
+      }
+    ]
+  }
+}

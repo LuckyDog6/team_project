@@ -1,0 +1,16 @@
+<van-cell title="标题"  value="{{todoed.title}}">
+  
+</van-cell>
+
+<van-cell title="地点"  value="{{todoed.location.name}}"/>
+<van-cell title="开始时间"  value="{{todoed.startTime}}"/>
+<van-cell title="结束时间"  value="{{todoed.endTime}}"/>
+
+
+<van-cell title="类别"  value="{{todoed.category}}"/>
+
+<van-cell title="发布人"  value="{{todoed.master}}"/>
+
+<van-cell center title="参与人员" value="" label="{{todoed.group}}"/>
+
+<van-cell center title="任务详情" value="" label="{{todoed.detail}}"/>

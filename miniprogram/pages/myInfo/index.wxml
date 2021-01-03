@@ -1,0 +1,8 @@
+<van-cell-group>
+  <van-cell title="昵称" value="{{user.nickName}}" />
+  <van-cell title="性别" value="{{user.gender==1?'男':'女'}}" />
+  <van-cell title="地区" value="{{user.city}}--{{user.province}}" />
+  <van-cell title="国家" value="{{user.country}}" />
+
+  
+</van-cell-group>

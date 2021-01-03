@@ -1,0 +1,18 @@
+<van-cell title="标题" is-link value="{{todo.title}}">
+  
+</van-cell>
+
+<van-cell title="地点" is-link value="{{todo.location.name}}"/>
+<van-cell title="开始时间" is-link value="{{todo.startTime}}"/>
+<van-cell title="结束时间" is-link value="{{todo.endTime}}"/>
+
+
+<van-cell title="类别" is-link value="{{todo.category}}"/>
+
+<van-cell title="发布人" is-link value="{{todo.master}}"/>
+
+<van-cell center title="参与人员" value="" label="{{todo.group}}"/>
+
+<van-cell center title="任务详情" value="" label="{{todo.detail}}"/>
+<van-dialog id="van-dialog" />
+<van-button type="primary" size="large" bindtap="success">已完成计划</van-button>

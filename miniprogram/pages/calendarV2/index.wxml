@@ -1,0 +1,41 @@
+<view style="width: 100%;overflow:hidden;margin: 0 auto 40rpx;">
+  <calendar id="calendar" config="{{calendarConfig}}" bind:onSwipe="onSwipe" bind:takeoverTap="takeoverTap" bind:afterTapDate="afterTapDate" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+</view>
+
+<navigator url="/pages/addTodos/addTodos?date={{date}}">
+  <view class="plus">
+    <van-icon class="plusIcon" name="plus" />
+  </view>
+
+</navigator>
+<view wx:if="{{todos.length!=0}}">
+  <van-notice-bar left-icon="volume-o" text="未完成" speed='10' />
+</view>
+<view wx:for="{{todos}}" wx:key="id">
+  <view>
+    <view>
+      <navigator url="/pages/info/info?id={{item._id}}">
+        <van-cell title="{{item.title}}" center value="{{item.master}}" size="large" label="{{item.date}}" is-link>
+
+        </van-cell>
+      </navigator>
+
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{todosed.length!=0}}">
+  <van-notice-bar left-icon="volume-o" text="已完成" speed='10' background='#7FFFAA' />
+</view>
+<view wx:for="{{todosed}}" wx:key="id">
+  <view>
+    <view>
+      <navigator url="/pages/infoed/infoed?id={{item._id}}">
+        <van-cell title="{{item.title}}" center value="{{item.master}}" size="large" label="{{item.date}}" is-link>
+
+        </van-cell>
+      </navigator>
+
+    </view>
+  </view>
+</view>

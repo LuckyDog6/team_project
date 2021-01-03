@@ -1,0 +1,17 @@
+@import '../calendarComponent/index.wxss';
+.plus{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: greenyellow;
+  border-radius: 100rpx;
+  position: fixed;
+  bottom:10rpx;
+  right: 0;
+  z-index: 100
+}
+.plusIcon{
+  font-size: 80rpx;
+  margin: 10rpx;
+  /* background-color: green; */
+  color:  rgb(250, 250, 250);
+}
